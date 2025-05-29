@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prenota</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/script.js" defer></script>
+</head>
+
+<body>
+    <!-- Header con Navbar -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="../index.html" class="logo">
+                    <div class="logo">
+                        <img src="../assets/images/logo.jpg" alt="Harmony">
+                    </div>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">Chi Siamo</a></li>
+                    <li><a href="menu.html" class="nav-link">Menu</a></li>
+                    <li><a href="#" class="nav-link">Prenota</a></li>
+                    <li><a href="../index.html#contact" class="nav-link">Contatti</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Prenotazione -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Prenota un Tavolo</h2>
+            </div>
+            <div class="divider"></div>
+            <div class="reservation-content">
+                <form id="form" class="reservation-form" novalidate>
+                    <div class="form-group">
+                        <label for="nome e cognome" class="form-label">Nome e cognome</label>
+                        <input type="text" id="nome e cognome" placeholder="Nome e cognome" class="form-input" required>
+                        <span class="error-handler"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" placeholder="Email" class="form-input" required>
+                        <span class="error-handler"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono" class="form-label">Telefono</label>
+                        <input type="tel" id="telefono" placeholder="Telefono" class="form-input" required>
+                        <span class="error-handler"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="data" class="form-label">Data</label>
+                        <input type="date" id="data" class="form-input" required>
+                        <span class="error-handler"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="orario" class="form-label">Ora</label>
+                        <input type="time" id="orario" class="form-input" required>
+                        <span class="error-handler"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="numero di ospiti" class="form-label">Numero di ospiti</label>
+                        <input type="number" id="numero di ospiti" placeholder="Numero di ospiti" class="form-input" min="1" max="8" required>
+                        <span class="error-handler"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Note speciali</label>
+                        <textarea class="form-input" id="message" placeholder="Note" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="button">Prenota ora</button>
+                </form>
+
+                <!-- Informazioni -->
+                <div>
+                    <h2>Informazioni</h2>
+                    <div class="divider"></div>
+                    <p class="helvetica">Diete o restrizioni</p>
+                    <p>Per servirvi nel modo più sicuro possibile, vi chiediamo di indicare eventuali restrizioni
+                        dietetiche serie al momento della prenotazione nelle note speciali. Si prega di notare che al
+                        momento non è possibile rimuovere aglio, sale, soia, zucchero e alghe dal menu. Cerchiamo di
+                        fare del nostro meglio per soddisfare altre allergie, ma non modifichiamo i piatti o le ricette
+                        durante il servizio.</p>
+                    <p>I menu fissi per ospiti vegetariani, vegani, senza glutine e senza latticini sono sempre
+                        disponibili. Questi menu vengono creati ogni sera dal nostro team di cucina e non siamo in grado
+                        di condividerli in anticipo. </p>
+                    <p>Per coloro che hanno restrizioni dietetiche gravi o complesse, vi preghiamo di contattarci
+                        direttamente per discutere se possiamo soddisfare le vostre esigenze prima di prenotare.</p>
+                    <div class="divider"></div>
+                    <p class="helvetica">Profumo</p>
+                    <p>Chiediamo ai gentili ospiti di limitare la quantità di profumo che indosseranno, per non
+                        interferire con l'esperienza degli altri ospiti. Si prega di essere consapevoli della quantità
+                        di profumo o colonia che si applicherà prima del pasto.</p>
+                    <div class="divider"></div>
+                    <p class="helvetica">Cancellazioni</p>
+                    <p>Se hai bisogno di cancellare una prenotazione per qualsiasi motivo, puoi farlo prima delle 48 ore
+                        della prenotazione e ti rimborseremo l'intero acconto, poi la prenotazione diventerà non
+                        rimborsabile.</p>
+                    <p>Per gruppi superiori a 8 persone, contattaci direttamente.</p>
+                </div>
+            </div>
+
+            <div class="info-icon">
+                <i class="fa-solid fa-clock"></i>
+            </div>
+            <div>
+                <h3 class="helvetica">Orari di Apertura</h3>
+                <p>Lunedì - Venerdì: 18:00 - 23:00<br>Sabato e Domenica: 12:00 - 15:00, 18:00 - 23:30</p>
+            </div>
+
+
+            <div class="info-icon">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <div>
+                <h3 class="helvetica">Telefono</h3>
+                <p>+39 012 345 6789</p>
+            </div>
+
+
+            <div class="info-icon">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div>
+                <h3 class="helvetica">Email</h3>
+                <p>info@ristoranteHarmony.it</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div>Harmony</div>
+                </div>
+                <div>
+                    <h4 class="footer-title helvetica">Link Utili</h4>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="../index.html">Home</a></li>
+                        <li class="footer-link"><a href="about.html">Chi siamo</a></li>
+                        <li class="footer-link"><a href="menu.html">Menu</a></li>
+                        <li class="footer-link"><a href="#">Prenota</a></li>
+                        <li class="footer-link"><a href="../index.html#contact">Contatti</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title helvetica">Orari di Apertura</h4>
+                    <p>Lunedì - Venerdì<br>18:00 - 23:00</p>
+                    <p>Sabato e Domenica<br>12:00 - 15:00<br>18:00 - 23:30</p>
+                </div>
+                <div>
+                    <h4 class="footer-title helvetica">Contatti</h4>
+                    <p>Via Torino 123<br>10100 Torino, Italia</p>
+                    <p>+39 012 345 6789<br>info@ristoranteHarmony.it</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/login/?locale=it_IT" target="_blank" class="social-icon"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/accounts/login/" target="_blank" class="social-icon"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/i/flow/login" target="_blank" class="social-icon"><i
+                                class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ristorante Harmony. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
